@@ -15,12 +15,10 @@ int main (){
     scanf("%lf", &AddressSize);
     printf( "Enter the Set associative E : ");
     scanf("%lf", &E);
-    printf( "Enter the Data cache size in kb : ");
+    printf( "Enter the Data cache size in bytes : ");
     scanf("%lf", &C);
     printf( "Enter the Block Size: ");
     scanf("%lf", &B);
-
-    C = C*1024;
 
     retOffset = log2(B);
     retIndex = log2(C/(E*B));
